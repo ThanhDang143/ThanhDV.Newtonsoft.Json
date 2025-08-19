@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using ThanhDV.Newtonsoft.Json;
 using UnityEngine;
 
 public class Tester : MonoBehaviour
@@ -14,7 +13,7 @@ public class Tester : MonoBehaviour
     public void Run()
     {
         var data = new PlayerData { Name = "Alice", Level = 5, Pos = Vector3.zero };
-        JsonSerializerSettings settings = Utilities.UnityJsonSettings;
+        JsonSerializerSettings settings = JsonUtilities.UnityJsonSettings;
 
         string json = JsonConvert.SerializeObject(data, Formatting.Indented, settings);
         Debug.Log(json);

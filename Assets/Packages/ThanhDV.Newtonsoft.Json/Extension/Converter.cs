@@ -1,8 +1,7 @@
 using System;
-using Newtonsoft.Json;
 using UnityEngine;
 
-namespace ThanhDV.Newtonsoft.Json
+namespace Newtonsoft.Json
 {
     #region Vector2
     public class Vector2Converter : JsonConverter<Vector2>

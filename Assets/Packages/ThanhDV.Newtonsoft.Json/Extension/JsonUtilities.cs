@@ -1,9 +1,8 @@
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
-namespace ThanhDV.Newtonsoft.Json
+namespace Newtonsoft.Json
 {
-    public static class Utilities
+    public static class JsonUtilities
     {
         public static readonly IList<JsonConverter> UnityConverter = new JsonConverter[]
         {
