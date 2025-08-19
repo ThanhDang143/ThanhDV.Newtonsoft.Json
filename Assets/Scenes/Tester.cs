@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using Newtonsoft.Json;
+using ThanhDV.Newtonsoft.Json;
 using UnityEngine;
 
 public class Tester : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    class PlayerData
     {
-
+        public string Name;
+        public int Level;
+        public Vector3 Pos;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Run()
     {
+        var data = new PlayerData { Name = "Alice", Level = 5, Pos = Vector3.zero };
+        JsonSerializerSettings settings = Utilities.UnityJsonSettings;
 
+        string json = JsonConvert.SerializeObject(data, Formatting.Indented, settings);
+        Debug.Log(json);
+
+        var clone = JsonConvert.DeserializeObject<PlayerData>(json, settings);
+        Debug.Log($"Clone: {clone.Name} - {clone.Level}");
     }
 }

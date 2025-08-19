@@ -5,6 +5,13 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+## [3.2.2] - 2025-08-19
+
+* Updated README.md
+* Added UnityConverters
+* Added JsonSerializerSettings preset for Unity
+
 ## [3.2.1] - 2023-04-27
 
 * Fixed Newtonsoft DLL when compiling with netstandard 2.0.

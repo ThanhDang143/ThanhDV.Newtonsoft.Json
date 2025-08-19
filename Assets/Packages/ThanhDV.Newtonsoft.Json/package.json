@@ -1,22 +1,24 @@
 {
-  "name": "com.unity.nuget.newtonsoft-json",
-  "displayName": "Newtonsoft Json",
-  "version": "3.2.1",
-  "unity": "2018.4",
-  "description": "Newtonsoft Json for use in Unity projects and Unity packages. Currently synced to version 13.0.2.\n\nThis package is used for advanced json serialization and deserialization. Most Unity users will be better suited using the existing json tools built into Unity.\nTo avoid assembly clashes, please use this package if you intend to use Newtonsoft Json.",
-  "type": "library",
-  "relatedPackages": {
-    "com.unity.nuget.newtonsoft-json.tests": "3.2.1"
+  "name": "thanhdv.newtonsoft.json",
+  "displayName": "ThanhDV's Json",
+  "version": "3.2.2",
+  "unity": "2022.3",
+  "description": "A Unity package wrapping the Json.NET (Newtonsoft.Json) library as DLLs for easy use in Unity projects, with some extensions by ThanhDV.",
+  "keywords": [
+    "Json",
+    "Serialization",
+    "Deserialization"
+  ],
+  "author": {
+    "name": "ThanhDV",
+    "email": "vanthanh1998@gmail.com",
+    "url": "https://books.thanhdv.icu/"
   },
-  "_upm": {
-    "changelog": "* Fixed Newtonsoft DLL when compiling with netstandard 2.0."
-  },
-  "upmCi": {
-    "footprint": "2539acbff1d09eea1674262b4f0cad9172e2bda9"
-  },
+  "dependencies": {},
   "repository": {
-    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git",
     "type": "git",
-    "revision": "d8e49aef8979bef617144382052ec2f479645eaf"
-  }
+    "url": "git+https://github.com/ThanhDang143/ThanhDV.Newtonsoft.Json.git"
+  },
+  "changelogUrl": "https://github.com/ThanhDang143/ThanhDV.Newtonsoft.Json/blob/main/Assets/Packages/ThanhDV.Newtonsoft.Json/CHANGELOG.md",
+  "license": "MIT"
 }
