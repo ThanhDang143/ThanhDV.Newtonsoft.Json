@@ -18,6 +18,7 @@ namespace Newtonsoft.Json
         {
             Converters = new List<JsonConverter>(UnityConverter),
             ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+            TypeNameHandling = TypeNameHandling.All
         };
     }
 }
